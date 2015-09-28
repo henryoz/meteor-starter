@@ -6,8 +6,9 @@ A boilerplate for Meteor using an organized project structure with 3 profiles us
     users): access to protected zone with username and password
  3. **Admin**: access to admin zone with username and password
 
-To login as a customer: customer@example.com with password '12345678'
-To login as an admin: admin@example.com with password '12345678'
+ 1. To login as a customer: customer@example.com with password '12345678'
+ 2. To login as an admin: admin@example.com with password '12345678'
+
 
 Uses the following packages:
 

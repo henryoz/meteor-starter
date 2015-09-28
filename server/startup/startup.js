@@ -21,7 +21,7 @@ console.log(Meteor.users.find().fetch().length);
 
         id = Accounts.createUser({
           email: userData.email,
-          password: "12345678a-",
+          password: "12345678",
           profile: {  }
         });
 
