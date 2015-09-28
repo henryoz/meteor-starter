@@ -1,66 +1,37 @@
 # Meteor-skeleton
-A boilerplate for Meteor - giving you a simple and more organized way to create projects.
+A boilerplate for Meteor using an organized project structure with 3 profiles using Bootstrap
 
-It comes with a complete collection sample including publications, subscriptions and CRUD functionality. Routes, views and some nice helpers are also included.
+1) Guests: no access to protected zone
+2) Customers (registered users): access to protected zone with username and password
+3) Admin: access to admin zone with username and password
 
-Take a look at [meteor-skeleton.meteor.com](http://meteor-skeleton.meteor.com) for a live sample.
+Uses the following packages:
 
-![Meteor-skeleton](http://i.imgur.com/ETTVDTM.png)
+aldeed:autoform
+aldeed:collection2
+aldeed:simple-schema
+iron:router
+alanning:roles
+accounts-base
+twbs:bootstrap
+momentjs:moment
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check
+ian:accounts-ui-bootstrap-3
+sacha:spin
+accounts-password
 
-## Packages used
+Originally based on the great boilerplate found in git clone https://github.com/kjetilhau/meteor-skeleton.git
 
-- meteor-platform
-- accounts-base
-- alanning:roles
-- iron:router
-- aldeed:simple-schema
-- aldeed:collection2
-- aldeed:autoform
-- momentjs:moment
-- twbs:bootstrap
-
-The Meteor packages 'autopublish' and 'insecure' are removed by default.
-
-## Usage
-1. Clone it: ```git clone https://github.com/kjetilhau/meteor-skeleton.git```
-2. ```cd meteor-skeleton```
-3. Remove the .git folder
-4. ```git init```
-6. ```meteor```
-
-## Structure
-
-```
-client/							# Client code
-  config/						# Configuration files
-  lib/							# Library files that get executed first
-    helpers/ 					# Helpers that helps you and yours
-  routes/						# Everything related to client-side routing
-  startup/						# Stuff that gets launched at client load
-  stylesheets/					# CSS/LESS/SCSS files
-    components/					# Styles for specific components
-    sites/						# Styles for sites and collections
-  subscriptions/				# Collection subscriptions that are not defined in routes
-  views/						# View templates
-    documents/					# Views related to the Documents collection
-    layouts/					# Layout files defined with Iron Router
-    pages/						# Views for static pages
-    shared/						# Usually templates that are shared between views
-lib/							# Code shared with client and server files
-  collections/					# Collection files, separate files for each collection
-  helpers/						# Helpers that is accessible on both client and server
-public/							# Public files
-  img/							# Static image folder
-  fonts/						# Static fonts folder
-server/							# Server code
-  config/						# Server configuration files
-  fixtures/						# Fixtures for defining pre-loaded data
-  lib/							# Server-side library folder
-  publications/					# Collection publications, separate files for each collection
-  startup/						# Stuff that gets launched at server startup
-```
-
-## Other great boilerplates
-- [meteor-boilerplate](https://github.com/matteodem/meteor-boilerplate) by matteodem
-- [Void](https://github.com/SachaG/Void) by Sacha Greif
-- [meteor-boilerplate](https://github.com/BeDifferential/meteor-boilerplate) by BeDifferential

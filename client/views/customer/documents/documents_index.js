@@ -1,11 +1,7 @@
 Template.documentsIndex.rendered = function() {
 };
 
-Template.documentsIndex.helpers({
-  sayHello: function () {
-    return "Hallo!";
-  }
-});
+Template.documentsIndex.helpers();
 
 Template.documentsIndex.events ({
   'click .delete-document': function(e) {
@@ -14,7 +10,12 @@ Template.documentsIndex.events ({
 
     if (confirm("Are you sure?")) {
       Documents.remove(item._id);
-      console.log("Deleted!")
+      console.log("Deleted!");
     }
+  },
+
+  'click #login-buttons-logout': function (event) {
+    Router.go('home');
   }
+
 });

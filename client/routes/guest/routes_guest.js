@@ -1,14 +1,14 @@
 // ***************************************************************
-// STATIC PAGES
+// STATIC PAGES - GUEST
 // ***************************************************************
 
 Router.map(function() {
 
   // FRONTPAGE
   // -------------------------------------------------------
-  this.route('frontpage', {
+  this.route('home', {
     path: '/',
-    template: 'frontpage'
+    template: 'home'
   });
 
   // ABOUT
@@ -16,6 +16,11 @@ Router.map(function() {
   this.route('about', {
     path: '/about',
     template: 'about'
+  });
+
+  this.route('accessDenied', {
+    template: 'accessDenied',
+    path: 'accessDenied',
   });
 
 });

@@ -3,12 +3,18 @@
 // ***************************************************************
 
 Router.map(function() {
+  // CUSTOMER DASHBOARD
+  // -------------------------------------------------------
+  this.route('customerDashboard', {
+    template: 'customerDashboard',
+    path: 'customer/dashboard',
+  });
 
   // DOCUMENTS INDEX
   // -------------------------------------------------------
   this.route('documentsIndex', {
     template: 'documentsIndex',
-    path: '/documents',
+    path: 'customer/documents',
     waitOn: function () {
       return Meteor.subscribe('documents');
     },
@@ -23,14 +29,14 @@ Router.map(function() {
   // -------------------------------------------------------
   this.route('documentNew', {
     template: 'documentNew',
-    path: '/documents/new'
+    path: 'customer/documents/new'
   });
 
   // DOCUMENT SHOW
   // -------------------------------------------------------
   this.route('documentShow', {
     template: 'documentShow',
-    path: '/documents/:_id',
+    path: 'customer/documents/:_id',
     waitOn: function () {
       return Meteor.subscribe('document', this.params._id);
     },
@@ -43,7 +49,7 @@ Router.map(function() {
   // -------------------------------------------------------
   this.route('documentEdit', {
     template: 'documentEdit',
-    path: '/documents/:_id/edit',
+    path: 'customer/documents/:_id/edit',
     waitOn: function () {
       return Meteor.subscribe('document', this.params._id);
     },

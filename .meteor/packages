@@ -27,6 +27,6 @@ random
 ejson
 spacebars
 check
-accounts-password
 ian:accounts-ui-bootstrap-3
 sacha:spin
+accounts-password
