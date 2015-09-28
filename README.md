@@ -36,5 +36,5 @@ Uses the following packages:
  - sacha:spin
  - accounts-password
 
-Originally based on the great boilerplate found in git clone https://github.com/kjetilhau/meteor-skeleton.git
+Originally based on the great boilerplate found here: https://github.com/kjetilhau/meteor-skeleton.git
 
